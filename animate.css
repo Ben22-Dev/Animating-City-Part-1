@@ -3,51 +3,242 @@
 }
 
 .green-speaker {
-
+    animation: green-speaker-backgrounds 60000ms infinite;
+    .dots {
+        animation: inner-speaker-dots-backgrounds 60000ms infinite;
+    }
 }
 
 .car.one {
-    animation:car-one-black 30000ms 1;
+    animation:car-one-black 60000ms infinite;
+    .wheels {
+        animation:black-car-wheels 60000ms infinite;
+    }
 }
 
 .car.two {
-    animation:car-two-green 90000ms infinite;
+    animation:car-two-green 60000ms infinite;
+    .wheels {
+        animation:green-car-wheels 60000ms infinite;
+    }
 }
 
 .car.three {
-    animation:car-three-red 90000ms infinite;
+    animation:car-three-red 60000ms infinite;
+    .wheels {
+        animation:red-car-wheels 60000ms infinite;
+    }
 }
 
 @keyframes car-one-black {
-    0% {
-        transform: translate(0);
-    }
-    20% {
-        transform: translateX(800%);
-    }
-    30% {
-        transform: translateX(0%) rotateY(180deg);
-    } 
-    100% {
-        transform: translateX(0) rotateY(180deg);
-    }
-
-
+0% {
+    transform: translateX(0);
 }
-/*
+13.5% {
+    transform: translateX(0);
+}
+
+40% {
+    transform: translateX(90rem);
+}
+
+50% {
+    transform:translateX(90rem) rotateY(180deg);
+}
+
+65% {
+    transform: translateX(30rem) rotateY(180deg);
+}
+
+81% {
+    transform: translateX(90rem) rotateY(180deg);
+}
+85% {
+    transform: translateX(90rem) rotateY(180deg);
+}
+
+100% {
+    transform:translateX(-20rem) rotateY(180deg);
+}
+}
+
 @keyframes car-two-green {
-    0% {
+0% {
+    transform: translateX(0) rotateY(180deg);
+}
+9% {
+    transform: translateX(-60rem) rotateY(180deg);
+}
+30% {
+    transform: translateX(-60rem) rotateY(180deg);
+}
+45% {
+    transform: translateX(-50rem) rotateY(180deg);
+}
 
-    }
+55% {
+    transform: translateX(-90rem) rotateY(180deg);
+}
 
-    100% {
-        transform: rotateY(180deg) translateX(20rem);
-    }
+83% {
+    transform: translateX(-90rem) rotateY(360deg);
+}
+
+100% {
+    transform: translateX(20rem) rotateY(360deg);
+}
 }
 
 @keyframes car-three-red {
 
+0% {
+    transform:translateX(0) rotateY(180deg);
+}
+9% {
+    transform:translateX(0) rotateY(180deg);
+}
+15% {
+    transform:translateX(-30rem) rotateY(180deg);
+}  
+36% {
+    transform: translateX(-30rem) rotateY(180deg) ;
+}
+55% {
+    transform: translateX(-95rem) rotateY(180deg);
+}
+60% {
+    transform: translateX(-95rem) rotateY(360deg);
+}
+100% {
+    transform:translateX(10rem) rotateY(360deg);
+}
+}
+
+@keyframes black-car-wheels {
+    0% {
+        transform: rotateZ(0);
+    }
+    13.5% {
+        transform: rotateZ(0);
+    }
+    
+    40% {
+        transform: rotateZ(360deg);
+    }
+    
+    50% {
+        transform: rotateZ(0);
+    }
+    
+    65% {
+        transform: rotateZ(360deg);
+    }
+    
+    81% {
+        transform: rotateZ(0);
+    }
+    85% {
+        transform: rotateZ(0);
+    }
+    
     100% {
-        transform: rotateY(180deg) translateX(30rem);
+        transform: rotateZ(360deg);
+    }  
+}
+
+@keyframes green-car-wheels {
+    0% {
+        transform: rotateZ(360deg);
+    }
+    9% {
+        transform: rotateZ(0deg);
+    }
+    30% {
+        transform: rotateZ(0deg);
+    }
+    45% {
+        transform: rotate(360deg);
+    }
+
+    55% {
+        transform: rotateZ(0deg);
+    }
+    83% {
+        transform: rotateZ(0deg);
+    }
+    
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes red-car-wheels {
+    0% {
+        transform: rotateZ(0);
+    }
+    9% {
+        transform: rotateZ(0);
+    }
+    15% {
+        transform: rotateZ(360deg);
+    }  
+    36% {
+        transform: rotateZ(360deg);
+    }
+    60% {
+        transform: rotateZ(0);
+    }
+    100% {
+        transform: rotateZ(360deg); 
+    }
+}
+
+@keyframes green-speaker-backgrounds {
+    0% {
+        background-color: black;
+    }
+    80% {
+        background-color: black;
+    }
+    100% {
+        background-color: green;
+    }
+}
+
+@keyframes inner-speaker-dots-backgrounds {
+    0% {
+        background-color: yellow;
+    }
+    
+    9% {
+        background-color: red;
+    }
+
+    45% {
+        background-color: green;
+    }
+
+    50% {
+        background-color: green;
+    }
+
+    55% {
+        background-color: red;
+    }
+
+    65% {
+        background-color: red;
+    }
+
+    70% {
+        background-color: green;
+    }
+
+    80% {
+        background-color: yellowgreen;
+    }
+
+    100% {
+        background-color: yellow;
     }
 }

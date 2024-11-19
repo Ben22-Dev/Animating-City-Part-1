@@ -37,7 +37,7 @@ p {
 
 body {
     background-color: var(--page-background-color);
-    overflow-x: hidden; 
+    overflow: hidden; 
 }
 main {
     height: 100%;
@@ -45,7 +45,7 @@ main {
 }
 .background-hills {
     position: relative;
-    z-index: -1;
+    z-index: -10;
     height:30rem;
     .short-left-parent-hill {
         position: absolute;
@@ -321,7 +321,8 @@ main {
     position: absolute;
     top:9rem;
     left:-3.5rem;
-    transform: rotate(-90deg) ;
+    transform: rotate(-90deg);
+    z-index: -3;
     .body {
         height:3rem;
         width:20rem;
@@ -384,8 +385,7 @@ main {
     .left-borders {
         position: absolute;
         top:-6rem;
-        left:10rem;
-        z-index: -1;
+        left:6.0rem;
         width: max-content;
         display: flex;
         .left-border {
@@ -412,8 +412,7 @@ main {
     .right-borders {
         position: absolute;
         top:-6rem;
-        right:10rem;
-        z-index: -1;
+        right:6.2rem;
         width: max-content;
         display: flex;
         .right-border {
@@ -1193,7 +1192,7 @@ main {
         transform-style: preserve-3d;
         transform: rotateY(-45deg);
         height:12rem;
-        width:1.79rem;
+        width:1.99rem;
         grid-area: car-left-entrance;
         align-self: end;
         z-index: 10;
@@ -1206,7 +1205,7 @@ main {
            
             .house {
                 position: absolute;
-                left:0;
+                left:-.2rem;
                 bottom: 0;
                 height:80%;
                 width:90%;
@@ -1381,7 +1380,6 @@ main {
             width:2.5rem;
             height:2.5rem;
             border-radius: 50%;
-
                 .wheel-lines {
                     position: absolute;
                     left:50%;
@@ -1455,7 +1453,6 @@ main {
 }
 .car.two {
 right:-15rem;
-transform: rotateY(180deg);
 .upper-part {
     background-color: rgb(1, 93, 1);
 .window {
@@ -1483,7 +1480,6 @@ transform: rotateY(180deg);
 
 .car.three {
     right:-15rem;
-    transform: rotateY(180deg);
     .upper-part {
         background-color: rgb(255, 0, 0);
     .window {
@@ -1512,3 +1508,32 @@ transform: rotateY(180deg);
 
 }
 }
+
+    .left-border-one {
+        background-color:var(--background-color-of-non-transparent-borders);
+        width:8.5rem;
+        height:16rem;
+        position: absolute;
+        top:16rem;
+        left:3.3rem;
+        border-radius:5rem 5rem 0 0;
+    }
+    .left-border-mid {
+        background-color:var(--background-color-of-non-transparent-borders);
+        width:8.1rem;
+        height:16rem;
+        position: absolute;
+        top:16rem;
+        left:35.59rem;
+        border-radius:5rem 5rem 0 0;
+    }
+
+    .right-border-last {
+        background-color:var(--background-color-of-non-transparent-borders);
+        width:8.5rem;
+        height:16rem;
+        position: absolute;
+        top:16rem;
+        right:3.3rem;
+        border-radius:5rem 5rem 0 0;
+    }
