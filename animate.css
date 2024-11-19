@@ -1,0 +1,53 @@
+.plane {
+    
+}
+
+.green-speaker {
+
+}
+
+.car.one {
+    animation:car-one-black 30000ms 1;
+}
+
+.car.two {
+    animation:car-two-green 90000ms infinite;
+}
+
+.car.three {
+    animation:car-three-red 90000ms infinite;
+}
+
+@keyframes car-one-black {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translateX(800%);
+    }
+    30% {
+        transform: translateX(0%) rotateY(180deg);
+    } 
+    100% {
+        transform: translateX(0) rotateY(180deg);
+    }
+
+
+}
+/*
+@keyframes car-two-green {
+    0% {
+
+    }
+
+    100% {
+        transform: rotateY(180deg) translateX(20rem);
+    }
+}
+
+@keyframes car-three-red {
+
+    100% {
+        transform: rotateY(180deg) translateX(30rem);
+    }
+}
