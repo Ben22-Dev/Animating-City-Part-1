@@ -6,10 +6,7 @@ html {
     box-sizing: border-box;
     margin: 0;
     padding:0;
-}
-
-p {
-    font-family: sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 :root {
@@ -36,17 +33,43 @@ p {
 }
 
 body {
+    position: relative;
     background-color: var(--page-background-color);
-    overflow: hidden; 
+    /*overflow: hidden; */
+    width:100vw;
+    height:100vh;
 }
+/*
+header {
+    width:100%;
+    height:100%;
+}
+
+.title {
+    width: 100%;
+    height:100%;
+    color:white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;    
+}
+*/
 main {
+    position: relative;
+    width:100%;
     height: 100%;
-    position: relative;   
 }
 .background-hills {
     position: relative;
     z-index: -10;
     height:30rem;
+
     .short-left-parent-hill {
         position: absolute;
         width:var(--width-of-short-parent-hills);     
@@ -319,9 +342,8 @@ main {
 
 .plane {
     position: absolute;
-    top:9rem;
-    left:-3.5rem;
-    transform: rotate(-90deg);
+    top:5rem;
+    left:0rem;
     z-index: -3;
     .body {
         height:3rem;
@@ -494,19 +516,19 @@ main {
     .headphone-building {
         position: absolute;
         top:-20rem;
-        left:5rem;
+        left:5.5rem;
         .upper-headphone-cover {
             width:13rem;
             height:15rem;
             border-radius: 50% 45% 0 0;
-            border-top: 1.3rem solid rgb(36, 119, 171);
-            border-left: 0.5rem solid rgb(112, 131, 138);
+            border-top: 1.3rem solid rgb(20, 82, 129);
+            border-left: 0.5rem solid rgb(87, 98, 101);
         .right-border {
             position: absolute;
             width: 13rem;
             height:7.5rem;
             border-radius: 50% 50% 0 0;
-            border-right: .5rem solid rgb(112, 131, 138);
+            border-right: .5rem solid rgb(87, 98, 101);
             top:1.0rem;
             right:0.4rem;
             z-index: -1;
@@ -517,7 +539,7 @@ main {
             right:-1.5rem;
             height:4.5rem;
             width:3.0rem;
-            background:linear-gradient(rgb(23, 76, 116) 50%, rgb(36, 119, 171) 50%,rgb(36, 119, 171));
+            background:linear-gradient(rgb(13, 106, 163) 50%,rgb(3, 59, 101)  50%,rgb(2, 46, 79) );
             border-radius: 0 50% 50% 0;
         }
         .headphone-left-sidebar {
@@ -526,7 +548,7 @@ main {
             left:-2.0rem;
             height:4.5rem;
             width:3.0rem;
-            background:linear-gradient(rgb(36, 119, 171) 50%,rgb(23, 76, 116)  50%,rgb(23, 76, 116) );
+            background:linear-gradient(rgb(13, 106, 163) 50%,rgb(3, 59, 101)  50%,rgb(2, 46, 79) );
             border-radius: 50% 0 0 50%;
         }
         .between-headphones-and-building-right {
@@ -535,7 +557,7 @@ main {
             right:1.6rem;
             height:6rem;
             width:1rem;
-            background:repeating-linear-gradient(90deg,rgba(36, 119, 171, 0.977) 50%,rgba(23, 76, 116, 0.397)  50%,rgba(23, 76, 116, 0.982) );;
+            background:repeating-linear-gradient(90deg,rgba(36, 119, 171, 0.977) 50%,rgba(23, 76, 116, 0.397) 50%,rgba(23, 76, 116, 0.982));
         }
         .between-headphones-and-building-left {
             position: absolute;
@@ -572,7 +594,7 @@ main {
                 left:-2.5rem;
                 width:6.5rem;
                 height:1rem;
-                background:linear-gradient(90deg,rgb(186, 182, 182) 50%,gray 50%);
+                background:linear-gradient(90deg,rgb(120, 121, 122) 50%,rgb(83, 83, 83) 50%);
             }
             .inner-building {
                 position: absolute;
@@ -587,16 +609,16 @@ main {
             .top {
                 grid-column: 1;
                 grid-row: 1/2;
-                background:repeating-linear-gradient(90deg,transparent 20%,rgb(1, 52, 1) 37%);
+                /*background:repeating-linear-gradient(90deg,transparent 20%,rgb(1, 52, 1) 37%);*/
+                background:repeating-linear-gradient(90deg,transparent 20%,rgb(0, 16, 27) 37%);
             }  
             .bottom {
                 grid-column: 1;
-                grid-row: 2/3;
-                background: green;    
+                grid-row: 2/3; 
+                background:linear-gradient(90deg,rgb(120, 121, 122) 50%,rgb(83, 83, 83) 50%);
             }
             }
         }
-
         .main-building {
             position: absolute;
             top:2.7rem;
@@ -613,7 +635,6 @@ main {
             ;
             .roof {
                 grid-area: roof;
-                background:linear-gradient(90deg,rgb(186, 182, 182) 50%,gray 50%);
                 border-radius: 1rem;
 
             }
@@ -774,7 +795,7 @@ main {
                 i {
                     grid-area: volume;
                     align-self: center;
-                    justify-self: end;
+                    justify-self:center;
                 }
 
                 p {
@@ -801,12 +822,13 @@ main {
 
             .volume-controller {
                 position: absolute;
+                top:1rem;
                 left:50%;
                 width:3rem;
                 height:.7rem;
                 background-color: rgb(36, 119, 171);
                 border-radius: 10rem;
-                transform: translate(-50%) translateY(20px);
+                transform: translateX(-50%);
             }
             }
         }
@@ -815,7 +837,6 @@ main {
             width:3.5rem;
             height:10.7rem;
             background-color: black;
-            color: white;
             right:-2rem;
             top:12.4rem;
             border-radius: 1rem;
@@ -839,13 +860,14 @@ main {
             background-color:black;
             clip-path: polygon(0% 0%,0% 100%,100% 0%, 100% 0%);  
         }
-        .chat {
+        .chat { 
+            color:red;
             height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap:.5rem;
-            text-align: center;
+            align-items: center;
+            gap:1rem;
         }
 }
 }
@@ -957,7 +979,7 @@ main {
                 padding-bottom: 2.65rem;
                 width: 5rem;
                 height:2.5rem;
-                background-color: rgba(51, 50, 50, 0.765);
+                background-color: rgb(63, 62, 62);
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
@@ -1036,10 +1058,30 @@ main {
                 .display {
                     width:85%;
                     height:80%;
-                    background:white;
+                    background:white; 
                     border-top-left-radius: 1rem;
                     display: flex;
+                    flex-direction: column;
+                    align-items: center;
                     justify-content: center;
+                    text-align: center;
+                    a {
+                        border:.1rem solid rgba(36, 119, 171, 0.553);
+                        padding:.5rem;
+                        background-color: rgba(36, 119, 171, 0.553);
+                        text-decoration: none;
+                        color: black;
+                        transition:transform 100ms ease-in-out;
+                        transition: background-color color 100ms ease-in-out;
+                        margin-top: 1.2rem;
+                    }
+                    a:hover {
+                        transform: scale(1.2);
+                    }
+                    a:active {
+                        background-color: rgb(36, 119, 171);
+                        color:white;
+                    }
                 }
             }
 
@@ -1087,7 +1129,7 @@ main {
                 bottom:4rem;
                 padding: 1rem;
                 width: 100%;
-                background-color: rgba(51, 50, 50, 0.765);
+                background-color: rgb(63, 62, 62);
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
@@ -1098,6 +1140,15 @@ main {
                     border-radius: 50%;
                     background-color:grey;
                 }
+            }
+            .dot.two,.dot.three {
+                background-color:red;
+            }
+            .dot.six,.dot.seven,.dot.ten,.dot.eleven,.dot.fourteen,.dot.fifteen  {
+                background-color:rgb(0, 255, 255);
+            }
+            .dot.eighteen,.dot.seventeen {
+                background-color: rgb(255, 255, 0);
             }
             .door {
                 position: absolute;
@@ -1159,6 +1210,7 @@ main {
                     top:5.5rem;
                     left:-2.5rem;
                     transform: rotateZ(-90deg);
+                    text-align: center;
                 }
                 .upper-radio-part {
                     position: relative;
@@ -1481,14 +1533,14 @@ right:-15rem;
 .car.three {
     right:-15rem;
     .upper-part {
-        background-color: rgb(255, 0, 0);
+        background-color: rgb(141, 4, 13);
     .window {
-        background-color:rgb(255, 162, 162);
+        background-color:rgb(239, 117, 117);
          }
     }
     
     .middle-part.one {   
-        background-color: rgb(255, 0, 0);
+        background-color: rgb(141, 4, 13);
     }
     
     .middle-part.two {
@@ -1498,11 +1550,11 @@ right:-15rem;
         background-color: rgb(255, 205, 205);
     }
     .wheels {
-        border: .5rem solid rgb(255,0,0);
+        border: .5rem solid rgb(141, 4, 13);
 
     }
     .wheel-lines {
-        background-color: rgb(255,0,0);
+        background-color: rgb(141, 4, 13);
     }
     }
 

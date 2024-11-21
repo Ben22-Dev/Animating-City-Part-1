@@ -1,0 +1,294 @@
+@media (width>=1920px) {
+
+    html {
+        font-size: 50px;
+    }
+
+    main {
+    border:3px solid white;
+  }
+  .background-hills {
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+  }
+
+}
+
+/*
+.background-hills {
+    position: relative;
+    z-index: -10;
+    height:30rem;
+    
+    .short-left-parent-hill {
+        position: absolute;
+        width:var(--width-of-short-parent-hills);     
+        height:var(--height-of-short-parent-hills); 
+        background-color:var(--background-color-of-parent-hills);
+        clip-path: var(--shape-of-parent-hills);
+        transform: rotate(90deg);
+        z-index: -1;   
+    }
+    .long-middle-parent-hill {
+        position: absolute;
+        width:var(--width-of-long-parent-hills);
+        height:var(--height-of-long-parent-hills);
+        background-color: var(--background-color-of-parent-hills);
+        clip-path: var(--shape-of-parent-hills);
+        transform: rotate(90deg);
+        z-index: -1;
+    }
+    .short-right-parent-hill {
+        position: absolute;
+        width:var(--width-of-short-parent-hills);     
+        height:var(--height-of-short-parent-hills); 
+        background-color:var(--background-color-of-parent-hills);
+        clip-path: var(--shape-of-parent-hills);
+        transform: rotate(90deg);
+        z-index: -1;
+    }
+    .curve {
+        position:absolute;
+        border-radius: 0rem 1rem 1rem 0rem;
+    }
+    .short-left-parent-hill.one {
+        bottom:3.0rem;
+        left:-2.8rem;
+    }
+    .long-middle-parent-hill.one {
+        bottom:3.0rem;
+        left:2.5rem;
+    }
+    .short-right-parent-hill.one {
+        bottom:2.8rem;
+        left:17rem;
+    }
+    .short-left-parent-hill.two {
+        bottom:2.8rem;
+        left:25rem;
+    }
+    .long-middle-parent-hill.two {
+        bottom:3.0rem;
+        left:28rem;
+    }
+    .short-right-parent-hill.two {
+        bottom:2.8rem;
+        left:39rem;
+    }
+    .short-left-parent-hill.three {
+        bottom:2.8rem;
+        right:17rem;
+    }
+    .long-middle-parent-hill.three {
+        bottom:3.0rem;
+        right:2.5rem;
+    }
+    .short-right-parent-hill.three {
+        bottom:2.8rem;
+        right:-2.8rem;
+    }
+    .short-child {
+        width:var(--width-of-short-child-hills);
+        height:var(--height-of-short-child-hills);
+        background-color: var(--background-color-of-child-hills);
+        clip-path: var(--shape-of-child-hills); 
+        rotate:90deg;
+        position: absolute;
+        border-bottom-left-radius: 5rem;
+        border-top-left-radius: 5rem;
+    }
+    .long-child {
+        width:var(--width-of-long-child-hills);
+        height:var(--height-of-long-child-hills);
+        background-color: var(--background-color-of-child-hills);
+        clip-path: var(--shape-of-child-hills); 
+        rotate:90deg;
+        position: absolute;
+        border-bottom-left-radius: 15rem;
+        border-top-left-radius: 15rem;
+        z-index: 1;
+    }
+    .short-child.left-child-one {
+        bottom: -0.5rem;
+        left:0.3rem;
+        .curve.one {
+            height:2.5rem;
+            width:1.1rem;
+            bottom:3rem;
+            left:0.1rem;
+            transform:rotate(-13deg);
+            background-color: var(--background-color-curve);
+        }
+        .curve.two {
+            height:2.3rem;
+            width:1.1rem;
+            bottom:6rem;
+            left:0.3rem;
+            transform:rotate(18deg);
+            background-color: var(--background-color-curve);
+        }
+    }
+    .short-child.left-child-two {
+        bottom: -0.5rem;
+        left:28.2rem;
+        .curve.one {
+            height:2.5rem;
+            width:1.1rem;
+            bottom:3rem;
+            left:0.1rem;
+            transform:rotate(-13deg);
+            background-color: var(--background-color-curve);
+        }
+        .curve.two {
+            height:2.3rem;
+            width:1.1rem;
+            bottom:6rem;
+            left:0.3rem;
+            transform:rotate(18deg);
+            background-color: var(--background-color-curve);
+        }
+    }
+    .short-child.left-child-three {
+        bottom: -0.5rem;
+        right:20.2rem;
+        .curve.one {
+            height:2.5rem;
+            width:1.1rem;
+            bottom:3rem;
+            left:0.1rem;
+            transform:rotate(-13deg);
+            background-color: var(--background-color-curve);
+        }
+        .curve.two {
+            height:2.3rem;
+            width:1.1rem;
+            bottom:6rem;
+            left:0.3rem;
+            transform:rotate(18deg);
+            background-color: var(--background-color-curve);
+        }
+    }
+    .long-child.long-child-one {
+        bottom:-0.1rem;
+        left:6.5rem;
+        .curve.one {
+            height:2.3rem;
+            width:1.5rem;
+            bottom:4.5rem;
+            left:0.4rem;
+            transform:rotate(-20deg);
+            background-color: var(--background-color-curve);
+        }
+        .curve.two {
+            height:4.0rem;
+            width:1.5rem;
+            bottom:7.0rem;
+            left:0.0rem;
+            transform:rotate(15deg);
+            background-color: var(--background-color-curve);
+        }
+    }
+    .long-child.long-child-two {
+        bottom:-0.1rem;
+        left:32.0rem;
+        .curve.one {
+            height:2.3rem;
+            width:1.5rem;
+            bottom:4.5rem;
+            left:0.4rem;
+            transform:rotate(-20deg);
+            background-color: var(--background-color-curve);
+        }
+        .curve.two {
+            height:4.0rem;
+            width:1.5rem;
+            bottom:7.0rem;
+            left:0.0rem;
+            transform:rotate(15deg);
+            background-color: var(--background-color-curve);
+        }
+    }
+    .long-child.long-child-three {
+        bottom:-0.1rem;
+        right:6.5rem;
+        .curve.one {
+            height:2.3rem;
+            width:1.5rem;
+            bottom:4.5rem;
+            left:0.4rem;
+            transform:rotate(-20deg);
+            background-color: var(--background-color-curve);
+        }
+        .curve.two {
+            height:4.0rem;
+            width:1.5rem;
+            bottom:7.0rem;
+            left:0.0rem;
+            transform:rotate(15deg);
+            background-color: var(--background-color-curve);
+        }
+    }
+    .short-child.right-child-one {
+        bottom: -0.5rem;
+        left:20.2rem;
+        .curve.one {
+            height:2.5rem;
+            width:1.1rem;
+            bottom:3rem;
+            left:0.1rem;
+            transform:rotate(-13deg);
+            background-color: var(--background-color-curve);
+        }
+        .curve.two {
+            height:2.3rem;
+            width:1.1rem;
+            bottom:6rem;
+            left:0.3rem;
+            transform:rotate(18deg);
+            background-color: var(--background-color-curve);
+        }
+    }
+    .short-child.right-child-two {
+        bottom: -0.5rem;
+        right:27.7rem;
+        .curve.one {
+            height:2.5rem;
+            width:1.1rem;
+            bottom:3rem;
+            left:0.1rem;
+            transform:rotate(-13deg);
+            background-color: var(--background-color-curve);
+        }
+        .curve.two {
+            height:2.3rem;
+            width:1.1rem;
+            bottom:6rem;
+            left:0.3rem;
+            transform:rotate(18deg);
+            background-color: var(--background-color-curve);
+        }
+    }
+    .short-child.right-child-three {
+        bottom: -0.5rem;
+        right:0.3rem;
+        .curve.one {
+            height:2.5rem;
+            width:1.1rem;
+            bottom:3rem;
+            left:0.1rem;
+            transform:rotate(-13deg);
+            background-color: var(--background-color-curve);
+        }
+        .curve.two {
+            height:2.3rem;
+            width:1.1rem;
+            bottom:6rem;
+            left:0.3rem;
+            transform:rotate(18deg);
+            background-color: var(--background-color-curve);
+        }
+    }
+}
+
+        */
