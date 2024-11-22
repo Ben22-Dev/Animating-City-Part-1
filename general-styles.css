@@ -62,6 +62,7 @@ main {
     position: relative;
     width:100%;
     will-change: transform;
+    overflow: hidden;
 }
 .background-hills {
     position: relative;
