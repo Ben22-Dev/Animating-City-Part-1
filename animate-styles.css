@@ -1,3 +1,4 @@
+/*
 header {
     animation:header 45000ms 1;
     animation-fill-mode:forwards;
@@ -235,7 +236,7 @@ main {
         display: block;
     }
 }
-
+*/
 .plane {
     animation:plane 60000ms infinite;
     .body,.wings,.tail {
