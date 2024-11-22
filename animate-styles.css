@@ -229,6 +229,7 @@ main {
         transform: translateY(-90rem);
         display: none;
     }
+
     100% {
         transform: translateY(0);
         display: block;
