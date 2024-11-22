@@ -24,22 +24,20 @@ html {
     --height-of-long-child-hills:54%;    
     --shape-of-child-hills:polygon(0% 25%, 0% 75%, 100% 100%, 100% 0%);
     --background-color-curve:rgba(68, 123, 134, 0.55);
-    --height-of-road-borders:10rem;
-    --width-of-road-borders:6rem;
+    --height-of-road-borders:6.0rem;
+    --width-of-road-borders:6.05rem;
     --background-color-of-transparent-borders:rgba(3, 94, 3, 0.772);
     --background-color-of-non-transparent-borders:rgba(34, 139, 34, 0.733);
     --road-color:antiquewhite;
-
 }
-
 body {
     position: relative;
     background-color: var(--page-background-color);
-    /*overflow: hidden; */
+    overflow-x: hidden;
     width:100vw;
-    height:100vh;
+    height: 100vh;
 }
-/*
+
 header {
     width:100%;
     height:100%;
@@ -59,11 +57,11 @@ header {
     flex-direction: column;
     gap:2rem;    
 }
-*/
+
 main {
     position: relative;
     width:100%;
-    height: 100%;
+    will-change: transform;
 }
 .background-hills {
     position: relative;
@@ -101,10 +99,6 @@ main {
         position:absolute;
         border-radius: 0rem 1rem 1rem 0rem;
     }
-    .short-left-parent-hill.one {
-        bottom:3.0rem;
-        left:-2.8rem;
-    }
     .long-middle-parent-hill.one {
         bottom:3.0rem;
         left:2.5rem;
@@ -133,10 +127,7 @@ main {
         bottom:3.0rem;
         right:2.5rem;
     }
-    .short-right-parent-hill.three {
-        bottom:2.8rem;
-        right:-2.8rem;
-    }
+
     .short-child {
         width:var(--width-of-short-child-hills);
         height:var(--height-of-short-child-hills);
@@ -158,26 +149,7 @@ main {
         border-top-left-radius: 15rem;
         z-index: 1;
     }
-    .short-child.left-child-one {
-        bottom: -0.5rem;
-        left:0.3rem;
-        .curve.one {
-            height:2.5rem;
-            width:1.1rem;
-            bottom:3rem;
-            left:0.1rem;
-            transform:rotate(-13deg);
-            background-color: var(--background-color-curve);
-        }
-        .curve.two {
-            height:2.3rem;
-            width:1.1rem;
-            bottom:6rem;
-            left:0.3rem;
-            transform:rotate(18deg);
-            background-color: var(--background-color-curve);
-        }
-    }
+    
     .short-child.left-child-two {
         bottom: -0.5rem;
         left:28.2rem;
@@ -318,26 +290,7 @@ main {
             background-color: var(--background-color-curve);
         }
     }
-    .short-child.right-child-three {
-        bottom: -0.5rem;
-        right:0.3rem;
-        .curve.one {
-            height:2.5rem;
-            width:1.1rem;
-            bottom:3rem;
-            left:0.1rem;
-            transform:rotate(-13deg);
-            background-color: var(--background-color-curve);
-        }
-        .curve.two {
-            height:2.3rem;
-            width:1.1rem;
-            bottom:6rem;
-            left:0.3rem;
-            transform:rotate(18deg);
-            background-color: var(--background-color-curve);
-        }
-    }
+
 }
 
 .plane {
@@ -402,12 +355,13 @@ main {
     left:50%;
     transform:translate(-50%);
     display: grid;
-
+  
 .road-borders {
     .left-borders {
         position: absolute;
+        z-index:-2;
         top:-6rem;
-        left:6.0rem;
+        left:-2rem;
         width: max-content;
         display: flex;
         .left-border {
@@ -430,11 +384,14 @@ main {
             .five {
                 background-color: var(--background-color-of-non-transparent-borders);
             }
+            .six {
+                background-color: var(--background-color-of-transparent-borders);
+            }
 }
     .right-borders {
         position: absolute;
         top:-6rem;
-        right:6.2rem;
+        right:-2rem;
         width: max-content;
         display: flex;
         .right-border {
@@ -443,7 +400,8 @@ main {
             border-radius: 5rem 5rem 0 0;
         }
             .one {
-                background-color: var(--background-color-of-transparent-borders);
+                background-color: var(--background-color-of-non-transparent-borders);
+                
             }
             .two {
                 background-color: var(--background-color-of-non-transparent-borders);
@@ -456,6 +414,9 @@ main {
             }
             .five {
                 background-color: var(--background-color-of-transparent-borders);
+            }
+            .six {
+                background-color: var(--background-color-of-non-transparent-borders);
             }
     }
 }
@@ -1083,6 +1044,15 @@ main {
                         color:white;
                     }
                 }
+                audio {
+                    position: absolute;
+                    z-index:5;
+                    bottom:.2rem;
+                    left:50%;
+                    transform: translateX(-50%);
+                    width:18rem;
+                    height:1.5rem;
+                }
             }
 
             .switches {
@@ -1557,35 +1527,5 @@ right:-15rem;
         background-color: rgb(141, 4, 13);
     }
     }
-
 }
 }
-
-    .left-border-one {
-        background-color:var(--background-color-of-non-transparent-borders);
-        width:8.5rem;
-        height:16rem;
-        position: absolute;
-        top:16rem;
-        left:3.3rem;
-        border-radius:5rem 5rem 0 0;
-    }
-    .left-border-mid {
-        background-color:var(--background-color-of-non-transparent-borders);
-        width:8.1rem;
-        height:16rem;
-        position: absolute;
-        top:16rem;
-        left:35.59rem;
-        border-radius:5rem 5rem 0 0;
-    }
-
-    .right-border-last {
-        background-color:var(--background-color-of-non-transparent-borders);
-        width:8.5rem;
-        height:16rem;
-        position: absolute;
-        top:16rem;
-        right:3.3rem;
-        border-radius:5rem 5rem 0 0;
-    }

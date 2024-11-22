@@ -1,294 +1,360 @@
-@media (width>=1920px) {
 
+@media (max-width:200px) {
     html {
-        font-size: 50px;
+        font-size: 1.0px !important;
     }
-
-    main {
-    border:3px solid white;
-  }
-  .background-hills {
-    position: absolute;
-    left:50%;
-    transform: translateX(-50%);
-  }
-
 }
-
-/*
-.background-hills {
-    position: relative;
-    z-index: -10;
-    height:30rem;
-    
-    .short-left-parent-hill {
-        position: absolute;
-        width:var(--width-of-short-parent-hills);     
-        height:var(--height-of-short-parent-hills); 
-        background-color:var(--background-color-of-parent-hills);
-        clip-path: var(--shape-of-parent-hills);
-        transform: rotate(90deg);
-        z-index: -1;   
+@media (min-width:240px) {
+    html {
+        font-size: 3.0px !important;
     }
-    .long-middle-parent-hill {
-        position: absolute;
-        width:var(--width-of-long-parent-hills);
-        height:var(--height-of-long-parent-hills);
-        background-color: var(--background-color-of-parent-hills);
-        clip-path: var(--shape-of-parent-hills);
-        transform: rotate(90deg);
-        z-index: -1;
+}
+@media (min-width:300px) {
+    html {
+        font-size: 3.5px !important;
     }
-    .short-right-parent-hill {
-        position: absolute;
-        width:var(--width-of-short-parent-hills);     
-        height:var(--height-of-short-parent-hills); 
-        background-color:var(--background-color-of-parent-hills);
-        clip-path: var(--shape-of-parent-hills);
-        transform: rotate(90deg);
-        z-index: -1;
+}
+@media (min-width:370px) {
+    html {
+        font-size: 4.7px !important;
     }
-    .curve {
-        position:absolute;
-        border-radius: 0rem 1rem 1rem 0rem;
+}
+@media (min-width:400px) {
+    html {
+        font-size: 5.2px !important;
     }
-    .short-left-parent-hill.one {
-        bottom:3.0rem;
-        left:-2.8rem;
+}
+@media (min-width:430px) {
+    html {
+        font-size: 5.6px !important;
     }
-    .long-middle-parent-hill.one {
-        bottom:3.0rem;
-        left:2.5rem;
-    }
-    .short-right-parent-hill.one {
-        bottom:2.8rem;
-        left:17rem;
-    }
-    .short-left-parent-hill.two {
-        bottom:2.8rem;
-        left:25rem;
-    }
-    .long-middle-parent-hill.two {
-        bottom:3.0rem;
-        left:28rem;
-    }
-    .short-right-parent-hill.two {
-        bottom:2.8rem;
-        left:39rem;
-    }
-    .short-left-parent-hill.three {
-        bottom:2.8rem;
-        right:17rem;
-    }
-    .long-middle-parent-hill.three {
-        bottom:3.0rem;
-        right:2.5rem;
-    }
-    .short-right-parent-hill.three {
-        bottom:2.8rem;
-        right:-2.8rem;
-    }
-    .short-child {
-        width:var(--width-of-short-child-hills);
-        height:var(--height-of-short-child-hills);
-        background-color: var(--background-color-of-child-hills);
-        clip-path: var(--shape-of-child-hills); 
-        rotate:90deg;
-        position: absolute;
-        border-bottom-left-radius: 5rem;
-        border-top-left-radius: 5rem;
-    }
-    .long-child {
-        width:var(--width-of-long-child-hills);
-        height:var(--height-of-long-child-hills);
-        background-color: var(--background-color-of-child-hills);
-        clip-path: var(--shape-of-child-hills); 
-        rotate:90deg;
-        position: absolute;
-        border-bottom-left-radius: 15rem;
-        border-top-left-radius: 15rem;
-        z-index: 1;
-    }
-    .short-child.left-child-one {
-        bottom: -0.5rem;
-        left:0.3rem;
-        .curve.one {
-            height:2.5rem;
-            width:1.1rem;
-            bottom:3rem;
-            left:0.1rem;
-            transform:rotate(-13deg);
-            background-color: var(--background-color-curve);
-        }
-        .curve.two {
-            height:2.3rem;
-            width:1.1rem;
-            bottom:6rem;
-            left:0.3rem;
-            transform:rotate(18deg);
-            background-color: var(--background-color-curve);
-        }
-    }
-    .short-child.left-child-two {
-        bottom: -0.5rem;
-        left:28.2rem;
-        .curve.one {
-            height:2.5rem;
-            width:1.1rem;
-            bottom:3rem;
-            left:0.1rem;
-            transform:rotate(-13deg);
-            background-color: var(--background-color-curve);
-        }
-        .curve.two {
-            height:2.3rem;
-            width:1.1rem;
-            bottom:6rem;
-            left:0.3rem;
-            transform:rotate(18deg);
-            background-color: var(--background-color-curve);
-        }
-    }
-    .short-child.left-child-three {
-        bottom: -0.5rem;
-        right:20.2rem;
-        .curve.one {
-            height:2.5rem;
-            width:1.1rem;
-            bottom:3rem;
-            left:0.1rem;
-            transform:rotate(-13deg);
-            background-color: var(--background-color-curve);
-        }
-        .curve.two {
-            height:2.3rem;
-            width:1.1rem;
-            bottom:6rem;
-            left:0.3rem;
-            transform:rotate(18deg);
-            background-color: var(--background-color-curve);
-        }
-    }
-    .long-child.long-child-one {
-        bottom:-0.1rem;
-        left:6.5rem;
-        .curve.one {
-            height:2.3rem;
-            width:1.5rem;
-            bottom:4.5rem;
-            left:0.4rem;
-            transform:rotate(-20deg);
-            background-color: var(--background-color-curve);
-        }
-        .curve.two {
-            height:4.0rem;
-            width:1.5rem;
-            bottom:7.0rem;
-            left:0.0rem;
-            transform:rotate(15deg);
-            background-color: var(--background-color-curve);
-        }
-    }
-    .long-child.long-child-two {
-        bottom:-0.1rem;
-        left:32.0rem;
-        .curve.one {
-            height:2.3rem;
-            width:1.5rem;
-            bottom:4.5rem;
-            left:0.4rem;
-            transform:rotate(-20deg);
-            background-color: var(--background-color-curve);
-        }
-        .curve.two {
-            height:4.0rem;
-            width:1.5rem;
-            bottom:7.0rem;
-            left:0.0rem;
-            transform:rotate(15deg);
-            background-color: var(--background-color-curve);
-        }
-    }
-    .long-child.long-child-three {
-        bottom:-0.1rem;
-        right:6.5rem;
-        .curve.one {
-            height:2.3rem;
-            width:1.5rem;
-            bottom:4.5rem;
-            left:0.4rem;
-            transform:rotate(-20deg);
-            background-color: var(--background-color-curve);
-        }
-        .curve.two {
-            height:4.0rem;
-            width:1.5rem;
-            bottom:7.0rem;
-            left:0.0rem;
-            transform:rotate(15deg);
-            background-color: var(--background-color-curve);
-        }
-    }
-    .short-child.right-child-one {
-        bottom: -0.5rem;
-        left:20.2rem;
-        .curve.one {
-            height:2.5rem;
-            width:1.1rem;
-            bottom:3rem;
-            left:0.1rem;
-            transform:rotate(-13deg);
-            background-color: var(--background-color-curve);
-        }
-        .curve.two {
-            height:2.3rem;
-            width:1.1rem;
-            bottom:6rem;
-            left:0.3rem;
-            transform:rotate(18deg);
-            background-color: var(--background-color-curve);
-        }
-    }
-    .short-child.right-child-two {
-        bottom: -0.5rem;
-        right:27.7rem;
-        .curve.one {
-            height:2.5rem;
-            width:1.1rem;
-            bottom:3rem;
-            left:0.1rem;
-            transform:rotate(-13deg);
-            background-color: var(--background-color-curve);
-        }
-        .curve.two {
-            height:2.3rem;
-            width:1.1rem;
-            bottom:6rem;
-            left:0.3rem;
-            transform:rotate(18deg);
-            background-color: var(--background-color-curve);
-        }
-    }
-    .short-child.right-child-three {
-        bottom: -0.5rem;
-        right:0.3rem;
-        .curve.one {
-            height:2.5rem;
-            width:1.1rem;
-            bottom:3rem;
-            left:0.1rem;
-            transform:rotate(-13deg);
-            background-color: var(--background-color-curve);
-        }
-        .curve.two {
-            height:2.3rem;
-            width:1.1rem;
-            bottom:6rem;
-            left:0.3rem;
-            transform:rotate(18deg);
-            background-color: var(--background-color-curve);
-        }
+}
+@media (min-width:460px) {
+    html {
+        font-size: 6.0px !important;
     }
 }
 
-        */
+@media (min-width:480px) {
+    html {
+        font-size: 6.2px !important;
+    }
+}
+@media (min-width:510px) {
+    html {
+        font-size: 6.7px !important;
+    }
+}
+@media (min-width:545px) {
+    html {
+        font-size: 7.0px !important;
+    }
+}
+@media (min-width:590px) {
+    html {
+        font-size: 7.35px !important;
+    }
+}
+@media (min-width:600px) {
+    html {
+        font-size: 7.6px !important;
+    }
+}
+@media (min-width:620px) {
+    html {
+        font-size: 7.9px !important;
+    }
+}
+@media (min-width:650px) {
+    html {
+        font-size: 8.3px !important;
+    }
+}
+
+@media (min-width:670px) {
+    html {
+        font-size: 8.74px !important;
+    }
+}
+
+@media (min-width:700px) {
+    html {
+        font-size: 9.0px !important;
+    }
+}
+@media (min-width:740px) {
+    html {
+        font-size: 9.5px !important;
+    }
+}
+@media (min-width:760px) {
+    html {
+        font-size: 10.0px !important;
+    }
+}
+@media (min-width:790px) {
+    html {
+        font-size: 10.5px !important;
+    }
+}
+
+@media (min-width:840px) {
+    html {
+        font-size: 11.0px !important;
+    }
+}
+@media (min-width:880px) {
+    html {
+        font-size: 11.5px !important;
+    }
+}
+@media (min-width:920px) {
+    html {
+        font-size: 12.0px !important;
+    }
+}
+@media (min-width:960px) {
+    html {
+        font-size: 12.5px !important;
+    }
+}
+@media (min-width:1000px) {
+    html {
+        font-size: 13.0px !important;
+    }
+}
+
+@media (min-width:1040px) {
+    html {
+        font-size: 13.5px !important;
+    }
+}
+
+@media (min-width:1080px) {
+    html {
+        font-size: 14.0px !important;
+    }
+}
+@media (min-width:1120px) {
+    html {
+        font-size: 14.5px !important;
+    }
+}
+@media (min-width:1160px) {
+    html {
+        font-size: 15.0px !important;
+    }
+}
+@media (min-width:1200px) {
+    html {
+        font-size: 15.5px !important;
+    }
+}
+
+@media (min-width:1240px) {
+    html {
+        font-size: 16.0px !important;
+    }
+}
+
+@media (min-width:1280px) {
+    html {
+        font-size: 16.5px !important;
+    }
+}
+
+@media (min-width:1320px) {
+    html {
+        font-size: 17.0px !important;
+    }
+}
+@media (min-width:1380px) {
+    html {
+        font-size: 17.5px !important;
+    }
+}
+@media (min-width:1420px) {
+    html {
+        font-size: 18.0px !important;
+    }
+}
+@media (min-width:1460px) {
+    html {
+        font-size: 18.5px !important;
+    }
+}
+
+@media (min-width:1500px) {
+    html {
+        font-size: 19.0px !important;
+    }
+}
+
+@media (min-width:1540px) {
+    html {
+        font-size: 19.5px !important;
+    }
+}
+
+@media (min-width:1580px) {
+    html {
+        font-size: 20.0px !important;
+    }
+}
+
+@media (min-width:1620px) {
+    html {
+        font-size: 20.5px !important;
+    }
+}
+
+@media (min-width:1660px) {
+    html {
+        font-size: 21.0px !important;
+    }
+}
+
+@media (min-width:1700px) {
+    html {
+        font-size: 21.5px !important;
+    }
+}
+
+@media (min-width:1740px) {
+    html {
+        font-size: 22.0px !important;
+    }
+}
+
+@media (min-width:1780px) {
+    html {
+        font-size: 22.5px !important;
+    }
+}
+
+@media (min-width:1820px) {
+    html {
+        font-size: 23.0px !important;
+    }
+}
+
+@media (min-width:1860px) {
+    html {
+        font-size: 23.5px !important;
+    }
+}
+
+@media (min-width:1900px) {
+    html {
+        font-size: 24.0px !important;
+    }
+}
+
+@media (min-width:1940px) {
+    html {
+        font-size: 24.5px !important;
+    }
+}
+
+@media (min-width:1980px) {
+    html {
+        font-size: 25.0px !important;
+    }
+}
+
+@media (min-width:2020px) {
+    html {
+        font-size: 25.5px !important;
+    }
+}
+
+@media (min-width:2060px) {
+    html {
+        font-size: 26.0px !important;
+    }
+}
+
+@media (min-width:2100px) {
+    html {
+        font-size: 26.5px !important;
+    }
+}
+
+@media (min-width:2140px) {
+    html {
+        font-size: 27.0px !important;
+    }
+}
+
+@media (min-width:2180px) {
+    html {
+        font-size: 27.5px !important;
+    }
+}
+
+@media (min-width:2220px) {
+    html {
+        font-size: 28.0px !important;
+    }
+}
+
+@media (min-width:2260px) {
+    html {
+        font-size: 28.5px !important;
+    }
+}
+
+@media (min-width:2300px) {
+    html {
+        font-size: 29.0px !important;
+    }
+}
+
+@media (min-width:2340px) {
+    html {
+        font-size: 29.5px !important;
+    }
+}
+
+
+@media (min-width:2380px) {
+    html {
+        font-size: 30.0px !important;
+    }
+}
+
+@media (min-width:2420px) {
+    html {
+        font-size: 30.5px !important;
+    }
+}
+
+@media (min-width:2460px) {
+    html {
+        font-size: 31.0px !important;
+    }
+}
+
+@media (min-width:2500px) {
+    html {
+        font-size: 31.5px !important;
+    }
+}
+
+@media (min-width:2540px) {
+    html {
+        font-size: 32.0px !important;
+    }
+}
+
+@media (min-width:2580px) {
+    html {
+        font-size: 32.5px !important;
+    }
+}
+
+@media (min-width:2620px) {
+    html {
+        font-size: 32.0px !important;
+    }
+}
