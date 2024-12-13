@@ -1,15 +1,12 @@
 html {
     font-size: 16px;
 }
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding:0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
-
 :root {
     --width-of-short-parent-hills:20%;
     --height-of-short-parent-hills:35%;
@@ -39,13 +36,11 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
 }
-
 header {
     width:100%;
     height:100%;
     overflow-x: hidden;
 }
-
 .title {
     width: 100%;
     height:100%;
@@ -60,7 +55,6 @@ header {
     flex-direction: column;
     gap:2rem;    
 }
-
 main {
     position: relative;
     height: 100%;
@@ -347,8 +341,6 @@ main {
         transform: rotate(-35deg);
     }
 }
-
-
 .ocean {
     position: absolute;
     height:15rem;
@@ -422,7 +414,6 @@ main {
             }
     }
 }
-
 .road {
     height:max-content;
     width: 100%;
@@ -586,7 +577,6 @@ main {
             position: absolute;
             top:2.7rem;
             right:2rem;
-
             width: 63%;
             height:23.3rem;
             display: grid;
@@ -599,7 +589,6 @@ main {
             .roof {
                 grid-area: roof;
                 border-radius: 1rem;
-
             }
             .inner-building {
                 position: absolute;
@@ -607,88 +596,67 @@ main {
                 justify-self: center;
                 height: 100%;
                 width:85%;
-               
                 display:grid;
                 grid-template-columns: repeat(7,1fr);
                 grid-template-rows: 20% 5% 10% 5% 15% 5% 10% 10% 20%;
-    
-
             .first-corodor-one-left,.first-corodor-two-left,.first-corodor-three-left,
              first-corodor-one-right,.first-corodor-two-right,.first-corodor-three-right {
                 grid-row: 1/2;
              }  
-
             .first-corodor-one-left {
                 grid-column: 1/2;
-
             }                
-
             .first-corodor-two-left {
                 grid-column: 2/3;
             }         
-
             .first-corodor-three-left {
                 grid-column: 3/4;
-                
             }         
             .middle-white {
                 grid-column: 4/5;
                 grid-row: 1/9;
                 background-color: rgba(206, 208, 209, 0.95);
             }
-
             .first-corodor-one-right {
                 grid-column: 5/6;              
             }
-            
             .first-corodor-two-right {
                 grid-column: 6/7;
                 
             }         
-
-            .first-corodor-three-right {
-                grid-column: 7/8;
+                .first-corodor-three-right {
+            grid-column: 7/8;
             }         
-
             .first-separator-left,
             .first-separator-right {
                 grid-row: 2/3;
             }
-
             .first-separator-left {
                 grid-column: 1/4;
             }
-
             .first-separator-right {
                 grid-column: 5/8;
             }
-
             .second-corodor-left,
             .second-corodor-right {
                 grid-row: 3/4;
             }
-            
             .second-corodor-left {
                 grid-column: 1/4;
             }
-
             .second-corodor-right {
                 grid-column: 5/8;
             }
-
             .second-separator-left,
             .second-separator-right {
                 grid-row: 4/5;
             }
-            
             .second-separator-left {
                 grid-column: 1/4;
             }
-
             .second-separator-right {
                 grid-column: 5/8;
             }
-
             .third-corodor-left,
             .third-corodor-right {
                 grid-row: 5/6;
@@ -696,25 +664,19 @@ main {
             .third-corodor-left {
                 grid-column: 1/4;
             }
-
             .third-corodor-right {
                 grid-column: 5/8;
             }
-
             .third-separator-left,
             .third-separator-right {
                 grid-row: 6/7;
             }
-
             .third-separator-left {
                 grid-column: 1/4;
             }
-
             .third-separator-right {
-                grid-column: 5/8;
-                
+                grid-column: 5/8;   
             }
-
             .fourth-corodor-left,
             .fourth-corodor-right {
                 grid-row: 7/8;
@@ -722,24 +684,19 @@ main {
             .fourth-corodor-left {
                 grid-column: 1/4;
             }
-
             .fourth-corodor-right {
                 grid-column: 5/8;
             }
-
             .fourth-separator-left,
             .fourth-separator-right {
                 grid-row: 8/9;
             }
-
             .fourth-separator-left {
                 grid-column: 1/4;
             }
-
             .fourth-separator-right {
                 grid-column: 5/8;
             }
-
             .volume-room {
                 grid-area:volume-room;
                 grid-row: 9/10;
@@ -760,14 +717,12 @@ main {
                     align-self: center;
                     justify-self:center;
                 }
-
                 p {
                     grid-area: dots;
                     align-self: center;
                     margin-bottom: 1.5rem;
                 }
             }
-
             .first-corodor-two-left,.first-corodor-two-right,
             .first-separator-left,.first-separator-right,
             .second-separator-left,.second-separator-right,
@@ -775,14 +730,12 @@ main {
             .fourth-separator-left,.fourth-separator-right {
                 background-color: rgb(116, 107, 107);
             }
-
             .first-corodor-one-left,.first-corodor-three-left,.first-corodor-one-right,.first-corodor-three-right,
             .second-corodor-left,.second-corodor-right,
             .third-corodor-left,.third-corodor-right,
             .fourth-corodor-left,.fourth-corodor-right {
                 background-color: rgb(79, 76, 76);
             }
-
             .volume-controller {
                 position: absolute;
                 top:1rem;
@@ -803,7 +756,6 @@ main {
             right:-2rem;
             top:12.4rem;
             border-radius: 1rem;
-        
         .chat-holder {
             position: absolute;
             top:1.9rem;
@@ -848,7 +800,6 @@ main {
         width:4.35rem;
         grid-area: ending-bridge;
     }
-
     .starting-bridge,.middle-bridge,.ending-bridge {
         height: 4rem;
         align-self: end;
@@ -868,7 +819,6 @@ main {
             background-color: gray;
         }
     }
-
     .right-road {
         position: relative;
         height: 15rem;
@@ -1056,7 +1006,6 @@ main {
                     height:1.5rem;
                 }
             }
-
             .switches {
                 position: absolute;
                 top:-5.8rem;
@@ -1088,7 +1037,6 @@ main {
                 top:-2.3rem;
                 left:-9.9rem;
             }
-
             .ground-television-holder {
             position: absolute;
             top: -0.5rem;
@@ -1148,7 +1096,6 @@ main {
             }
             }
         }
-
         .right-radio {
             .radio {
                 position: absolute;
@@ -1210,7 +1157,7 @@ main {
                 }
             }
         }
-}
+    }
     .car-left-entrance {
         position: relative;
         transform-style: preserve-3d;
@@ -1225,8 +1172,7 @@ main {
             bottom:0;
             left:-8.0rem;
             height:180%;
-            width:11.6rem;
-           
+            width:11.6rem;       
             .house {
                 position: absolute;
                 left:-.2rem;
@@ -1235,7 +1181,6 @@ main {
                 width:90%;
                 background-color: rgb(250, 235, 215);
                 border-radius: 5rem 5rem 0 0;
-                
                 .front-entry {
                     position: absolute;
                     background-color: grey;
@@ -1244,7 +1189,6 @@ main {
                     bottom:0;
                     right: .0rem;   
                 }
-
                 .door {
                     width:70%;
                     height:80%;
@@ -1253,8 +1197,7 @@ main {
                     bottom: 0;
                     right:50%;
                     transform: translate(50%);
-                    border-radius: 5rem 5rem 0 0;
-                    
+                    border-radius: 5rem 5rem 0 0;   
                 }
                 .top-tree {
                     width: max-content;
@@ -1262,7 +1205,6 @@ main {
                     top: -2.5rem;
                     left: 50%;
                     transform: translate(-50%);
-                    
                     .grass {
                         width:2.5rem;
                         height:2rem;
@@ -1282,7 +1224,6 @@ main {
             }
         }
     }
-
     .car-right-entrance {
         position: relative;
         height:12rem;
@@ -1330,8 +1271,7 @@ main {
                     position: absolute;
                     top: -2.5rem;
                     left: 50%;
-                    transform: translate(-50%);
-                    
+                    transform: translate(-50%);               
                     .grass {
                         width:2.5rem;
                         height:2rem;
@@ -1447,7 +1387,6 @@ main {
             right:-.5rem;
         }
 }
-
 .car.one {
     left:-15rem;
 .upper-part {
@@ -1456,18 +1395,15 @@ main {
     background-color:aliceblue;
      }
 }
-
 .middle-part.one {   
     background-color: black;
 }
-
 .middle-part.two {
     background-color: rgba(54, 52, 52, 0.991);
 }
 .lamp {
     background-color: aliceblue;
 }
-
 .wheels {
     border: .5rem solid;
 }
@@ -1483,11 +1419,9 @@ right:-15rem;
     background-color:rgb(191, 243, 201);
      }
 }
-
 .middle-part.one {   
     background-color: rgb(1, 93, 1);
 }
-
 .middle-part.two {
     background-color: rgba(11, 107, 11, 0.884);
 }
@@ -1501,7 +1435,6 @@ right:-15rem;
     background-color: rgb(1, 93, 1);
 }
 }
-
 .car.three {
     right:-15rem;
     .upper-part {
@@ -1509,8 +1442,7 @@ right:-15rem;
     .window {
         background-color:rgb(239, 117, 117);
          }
-    }
-    
+    }   
     .middle-part.one {   
         background-color: rgb(141, 4, 13);
     }

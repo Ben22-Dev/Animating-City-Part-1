@@ -213,8 +213,6 @@ header {
     }
 }
 
-
-
 main {
     animation:main 45000ms;
     animation-fill-mode: forwards;
@@ -503,8 +501,7 @@ main {
         animation: inner-speaker-dots-backgrounds 60000ms infinite alternate;
     }
     }
-
-
+    
 .green-speaker {
     animation: green-speaker-backgrounds 60000ms infinite alternate;
     .dots {
